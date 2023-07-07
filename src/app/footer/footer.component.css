@@ -1,0 +1,51 @@
+footer {
+    background-color: whitesmoke;
+    width: auto;
+    height: auto;
+    top:2px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 2px solid gray;
+}
+.agenda{
+        width:100%;
+        height: 50%;
+        border-radius: 15px;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }    
+.caja{
+    width: 23%;
+    height: 50%;
+    padding: 15px;
+    float: left;
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+.caja>h3{
+    text-align: center;
+}
+.caja>p{
+    text-align: center;
+}
+.redes{
+    width:auto;
+    height: 50%;
+    padding: 15px;
+    /* display: left; */
+    text-align: center;
+}
+.redes>h3{
+    text-align: center;
+}
+.redes>p{
+    text-align: center;
+}
+.redes>a>img:hover{
+    background-color: gray ;
+
+}
+#correo{
+   text-align: center;
+}
