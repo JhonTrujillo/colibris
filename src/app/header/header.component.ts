@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faSearch} from '@fortawesome/free-solid-svg-icons';
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+faSearch = faSearch;
+faRigthToBracket = faRightToBracket;
 
 }

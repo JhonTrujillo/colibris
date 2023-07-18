@@ -1,8 +1,8 @@
 <header id="arriba">
     <!-- Titulo logo login   -->
     <h3 class="titulo">Liceo Colibris</h3>
-    <a href="index.html" id="imglogo"><img id="logo" src="./assets/logo.png" alt="logo"></a>
-    <a href="login.html" id="imglogin"><img id="login" src="./assets/login2.jpg" alt="login"></a>
+    <a href="index.html" id="imglogo"><img id="logo" src="./assets/images/logo.png" alt="logo"></a>
+    <a href="login.html" id="imglogin"><fa-icon id="login" [icon]="faRigthToBracket"></fa-icon></a>
     <!-- Barra de navegacion menu desplegable     -->
     <nav id="barranav">
       <ul class="enlaces-menu">
@@ -18,15 +18,16 @@
       </ul>
     </nav>
     <!-- division botones mostrar/ocultar -->
-    <div>
+    <!-- <div>
       <button id="btmostrar" onclick="mostrar();">Mostrar</button>
       <button id="btocultar" onclick="ocultar();">Ocultar</button>
-    </div>
+    </div> -->
     <div class="ctn-buscador">
       <!-- Espacio del buscador -->
       <input type="text" name="buscador" id="buscador" placeholder="¿Que desea buscar?" onkeypress="capturaTecla(event)">
       <!-- el metodo onclick ejecuta la funcion realizarBusqueda que se encuentra en buscador.js -->
-      <button onclick="realizarBusqueda()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button onclick="realizarBusqueda()"><fa-icon [icon]="faSearch"></fa-icon></button>
       <div id="listadoBusqueda"></div>
     </div>
   </header>
+  

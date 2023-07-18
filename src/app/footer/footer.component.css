@@ -16,9 +16,9 @@ footer {
         text-align: center;
     }    
 .caja{
-    width: 23%;
+    width: 22%;
     height: 50%;
-    padding: 15px;
+    padding: 15px 15px;
     float: left;
     border: 2px solid gray;
     border-radius: 15px;
