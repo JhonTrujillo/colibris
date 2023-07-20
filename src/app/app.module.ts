@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardindexComponent } from './cardindex/cardindex.component';
+import { QuienessomosComponent } from './quienessomos/quienessomos.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { CardindexComponent } from './cardindex/cardindex.component';
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    CardindexComponent
+    CardindexComponent,
+    QuienessomosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
