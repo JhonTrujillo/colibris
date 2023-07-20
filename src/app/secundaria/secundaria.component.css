@@ -1,0 +1,12 @@
+.enconstruccion{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.enconstruccion>img{
+    width: 800px;
+    height: 600px;
+  
+    
+}

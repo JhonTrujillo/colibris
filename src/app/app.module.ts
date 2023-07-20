@@ -10,6 +10,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardindexComponent } from './cardindex/cardindex.component';
 import { QuienessomosComponent } from './quienessomos/quienessomos.component';
 import { HomeComponent } from './home/home.component';
+import { PrimariaComponent } from './primaria/primaria.component';
+import { SecundariaComponent } from './secundaria/secundaria.component';
+import { CursosComponent } from './cursos/cursos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { HomeComponent } from './home/home.component';
     BannerComponent,
     CardindexComponent,
     QuienessomosComponent,
-    HomeComponent
+    HomeComponent,
+    PrimariaComponent,
+    SecundariaComponent,
+    CursosComponent
   ],
   imports: [
     BrowserModule,
