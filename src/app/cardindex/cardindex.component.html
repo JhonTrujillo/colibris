@@ -1,0 +1,9 @@
+<!-- division de las card       -->
+<div class="contcard">
+    <div class="card" *ngFor="let item of itemsCard">
+        <h5>{{item.titulo}}</h5>
+        <img src="{{item.imagen}}" height="150px" width="240px">
+        <p>{{item.descripcion}}</p>
+        <a href="{{item.enlace}}">Click aqui</a>
+    </div>
+</div>

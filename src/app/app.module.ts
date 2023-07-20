@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CardindexComponent } from './cardindex/cardindex.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    CardindexComponent
   ],
   imports: [
     BrowserModule,
