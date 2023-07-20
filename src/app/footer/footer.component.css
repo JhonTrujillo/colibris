@@ -16,17 +16,12 @@ footer {
         text-align: center;
     }    
 .caja{
-    width: 22%;
+    width: 25%;
     height: 50%;
     padding: 15px 15px;
-    float: left;
+    display: inline-block;
     border: 2px solid gray;
     border-radius: 15px;
-}
-.caja>h3{
-    text-align: center;
-}
-.caja>p{
     text-align: center;
 }
 .redes{
@@ -36,11 +31,11 @@ footer {
     /* display: left; */
     text-align: center;
 }
-.redes>h3{
-    text-align: center;
-}
-.redes>p{
-    text-align: center;
+.redes>a>img{
+    padding: 5px;
+    height: 32px;
+    width: 32px;
+
 }
 .redes>a>img:hover{
     background-color: gray ;
