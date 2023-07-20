@@ -1,7 +1,9 @@
 /* div card*/
 .contcard{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 10px 10px;
+    
 }
 .card{
     width: 250px;

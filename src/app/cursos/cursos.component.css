@@ -1,0 +1,17 @@
+/* div card*/
+.contcard{
+    display: flex;
+    padding: 10px 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 250px;
+    height:300px;
+    padding: 5px 5px;
+    display:inline-flex;
+    text-align: center;   
+    
+    
+} 
