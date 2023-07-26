@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 interface CardItem {
   titulo: String;
@@ -17,19 +18,19 @@ export class CardindexComponent {
     titulo: 'Primaria',
     imagen: '../../assets/images/primaria.jpg',
     descripcion: 'Jardin a Quinto',
-    enlace: 'primaria.html',
+    enlace: "primaria",
   },
   {
     titulo:'Secundaria',
     imagen:'../../assets/images/secundaria.avif',
     descripcion:'Sexto a Once',
-    enlace:'secundaria.html',
+    enlace:'secundaria',
 },
 {
     titulo:'Cursos',
     imagen:'../../assets/images/clasesvacacionales.jpg',
     descripcion:'Cursos - Refuerzo',
-    enlace:'cursos.html',
+    enlace:'cursos',
 }
 ]
 
