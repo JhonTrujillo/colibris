@@ -1,0 +1,17 @@
+img{
+    margin: auto;
+    display: flex;
+    margin-top: 15px;
+}
+form{
+    margin: auto;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { PrimariaComponent } from './primaria/primaria.component';
 import { SecundariaComponent } from './secundaria/secundaria.component';
 import { CursosComponent } from './cursos/cursos.component';
+import { LoginComponent } from './formularios/login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +25,13 @@ import { CursosComponent } from './cursos/cursos.component';
     HomeComponent,
     PrimariaComponent,
     SecundariaComponent,
-    CursosComponent
+    CursosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
