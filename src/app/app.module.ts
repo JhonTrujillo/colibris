@@ -13,6 +13,8 @@ import { PrimariaComponent } from './primaria/primaria.component';
 import { SecundariaComponent } from './secundaria/secundaria.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { LoginComponent } from './formularios/login/login.component';
+import { FormulariosModule } from './formularios/formularios.module';
+
 
 @NgModule({
   declarations: [
@@ -26,12 +28,14 @@ import { LoginComponent } from './formularios/login/login.component';
     PrimariaComponent,
     SecundariaComponent,
     CursosComponent,
-    LoginComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    FormulariosModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

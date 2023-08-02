@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contactenos',
@@ -8,13 +8,21 @@ import { FormControl } from '@angular/forms';
 })
 export class ContactenosComponent {
 
-  nombres = new FormControl("");
-  apellidos = new FormControl("");
-  cedula = new FormControl("");
-  Correo = new FormControl("");
-  usuario = new FormControl("");
-  observaciones = new FormControl("");
+  // nombres = new FormControl("");
+  // apellidos = new FormControl("");
+  // cedula = new FormControl("");
+  // Correo = new FormControl("");
+  // usuario = new FormControl("");
+  // observaciones = new FormControl("");
 
+constructor(private fb: FormBuilder) { }
+formContacto = this.fb.group({
+nombres: ["", Validators.required]
 
+})
 
 }
+
+
+
+

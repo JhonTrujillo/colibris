@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 
 
 @Component({
@@ -9,6 +9,12 @@ import { FormControl } from '@angular/forms';
 })
 export class LoginComponent {
 
-  usuario = new FormControl("");
-  password = new FormControl("");
+  // usuario = new FormControl("");
+  // password = new FormControl("");
+
+  constructor(private fb: FormBuilder) { }
+  formLogin = this.fb.group({
+    usuario: ["",Validators.required]
+
+  })
 }

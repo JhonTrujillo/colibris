@@ -1,22 +1,3 @@
-<h5>contacto</h5>
-<form>
-<label for="Nombres">Nombres</label>
-<input type="text" id="nombres" placeholder="Pepito" FormControl="nombres">
-
-<label for="Apellidos">Apellidos</label>
-<input type="text" id="apellidos" placeholder="Perez" FormControl="apellidos">
-
-<label for="identificacion">Identificacion</label>
-<input type="text" id="identificacion" placeholder="123456789" FormControl="identificacion">
-
-<label for="correo">Correo</label>
-<input type="text" id="correo" placeholder="pepitoperez@dominio.com" FormControl="correo">
-
-<label for="usuario">Usuario</label>
-<input type="text" id="usuario" FormControl="usuario">
-
-<label for="observaciones">observaciones</label>
-<textarea name="" id="observaciones" cols="75" rows="5" FormControl="observaciones"></textarea>
-
-<button type="submit" class="formulario_boton" id="btnvalidar" onclick="validar(event)">Enviar</button>
-</form>
+<form [formGroup]="formContacto">
+<input type="text" formControlName="nombres">
+</form> 
