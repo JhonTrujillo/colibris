@@ -1,7 +1,10 @@
 <img src="../../../assets/images/login.png">
 <form [formGroup]="formLogin">
-<label>USUARIO</label>    
-<input type="text" formControlName="usuario">
-<label>PASSWORD</label>    
-<input type="text" formControlName="usuario">
+    <label>Usuario</label>    
+    <input type="text" formControlName="usuario">
+    <p *ngIf="!formLogin.controls.usuario.valid && formLogin.controls.usuario.touched">Digite Usuario Valido </p>
+<label>Password</label>    
+<input type="text" formControlName="password">
+<p *ngIf="!formLogin.controls.password.valid && formLogin.controls.password.touched">Digite Password Valido </p>
+<button type="submit" class="formulario_boton" id="btnvalidar">Enviar</button>
 </form>

@@ -1,3 +1,21 @@
+<h5>Contactenos</h5>
 <form [formGroup]="formContacto">
-<input type="text" formControlName="nombres">
+<label>Nombres</label>    
+<input type="text" placeholder="Pepito" formControlName="nombres">
+<p *ngIf="!formContacto.controls.nombres.valid && formContacto.controls.nombres.touched">Digite Nombres Validos </p>
+<label>Apellidos</label>    
+<input type="text" placeholder="Perez" formControlName="apellidos">
+<p *ngIf="!formContacto.controls.apellidos.valid && formContacto.controls.apellidos.touched">Digite Apellidos Validos </p>
+<label>Cedula</label>    
+<input type="text" placeholder="123456789" formControlName="cedula">
+<label>Email</label>    
+<input type="text" formControlName="email">
+<p *ngIf="!formContacto.controls.email.valid && formContacto.controls.email.touched">Digite Correo Valido </p>
+<label>Usuario</label>    
+<input type="text" formControlName="usuario">
+<p *ngIf="!formContacto.controls.usuario.valid && formContacto.controls.usuario.touched">Digite Usuario Valido </p>
+<label>Observaciones</label>    
+<textarea formControlName="observaciones"></textarea>
+<p *ngIf="!formContacto.controls.observaciones.valid && formContacto.controls.observaciones.touched">Maximo 10 caracteres </p>
+<button type="submit" class="formulario_boton" id="btnvalidar">Enviar</button>
 </form> 

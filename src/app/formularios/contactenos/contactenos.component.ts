@@ -15,13 +15,17 @@ export class ContactenosComponent {
   // usuario = new FormControl("");
   // observaciones = new FormControl("");
 
-constructor(private fb: FormBuilder) { }
-formContacto = this.fb.group({
-nombres: ["", Validators.required]
+  constructor(private fb: FormBuilder) { }
+  formContacto = this.fb.group({
+  nombres: ["", [Validators.required, Validators.minLength(4)]],
+  apellidos: ["", Validators.required],
+  cedula: ["", Validators.required],
+  email: ['', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
+  usuario: ["", [Validators.required, Validators.pattern("^([a-zA-Z0-9_-]{0,25})$")]],
+  observaciones: ["", [Validators.required, Validators.maxLength(10)]]
 
-})
-
-}
+  }
+)}
 
 
 

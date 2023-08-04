@@ -14,7 +14,8 @@ export class LoginComponent {
 
   constructor(private fb: FormBuilder) { }
   formLogin = this.fb.group({
-    usuario: ["",Validators.required]
+    usuario: ["", [Validators.required, Validators.pattern("^([a-zA-Z0-9_-]{0,25})$")]],
+    password: ["", Validators.required],
 
   })
 }
