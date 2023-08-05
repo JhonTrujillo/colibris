@@ -14,7 +14,8 @@ import { SecundariaComponent } from './secundaria/secundaria.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { LoginComponent } from './formularios/login/login.component';
 import { FormulariosModule } from './formularios/formularios.module';
-
+import { BuscadorComponent } from './buscador/buscador.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,15 @@ import { FormulariosModule } from './formularios/formularios.module';
     PrimariaComponent,
     SecundariaComponent,
     CursosComponent,
+    BuscadorComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormulariosModule
+    FormulariosModule,
+    HttpClientModule
     
   ],
   providers: [],

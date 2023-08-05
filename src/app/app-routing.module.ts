@@ -7,6 +7,7 @@ import { SecundariaComponent } from './secundaria/secundaria.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { LoginComponent } from './formularios/login/login.component';
 import { ContactenosComponent } from './formularios/contactenos/contactenos.component';
+import { BuscadorComponent } from './buscador/buscador.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:"secundaria",component:SecundariaComponent},
   {path:"cursos",component:CursosComponent},
   {path:"contacto",component:ContactenosComponent},
-  {path:"login",component:LoginComponent}
+  {path:"login",component:LoginComponent},
+  {path:"buscador",component:BuscadorComponent}
 ];
 
 @NgModule({

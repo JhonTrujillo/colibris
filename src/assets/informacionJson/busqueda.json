@@ -1,0 +1,22 @@
+{
+    "informacionFiltrarPagina": [
+        {
+            "titulo": "Primaria",
+            "enlace": "<app-primaria>"
+        },
+        {
+            "titulo": "Secundaria",
+            "enlace": "secundaria"
+        },
+        {
+            "titulo": "Cursos",
+            "enlace": "app-cursos"
+        },
+        {
+            "titulo": "QuienesSomos",
+            "enlace": "quienessomos"
+        }
+      
+
+    ]
+}
