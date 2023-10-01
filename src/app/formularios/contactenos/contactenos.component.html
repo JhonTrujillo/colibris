@@ -1,5 +1,5 @@
 <h5>Contactenos</h5>
-<form [formGroup]="formContacto">
+<form [formGroup]="formContacto"(ngSubmit)="onSubmit($event)">
 <label>Nombres</label>    
 <input type="text" placeholder="Pepito" formControlName="nombres">
 <p *ngIf="!formContacto.controls.nombres.valid && formContacto.controls.nombres.touched">Digite Nombres Validos </p>

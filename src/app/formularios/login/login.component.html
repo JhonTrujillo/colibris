@@ -1,5 +1,5 @@
 <img src="../../../assets/images/login.png">
-<form [formGroup]="formLogin">
+<form [formGroup]="formLogin" (ngSubmit)="enviarDatos()">
     <label>Usuario</label>    
     <input type="text" formControlName="usuario">
     <p *ngIf="!formLogin.controls.usuario.valid && formLogin.controls.usuario.touched">Digite Usuario Valido </p>
