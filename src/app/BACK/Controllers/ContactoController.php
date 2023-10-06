@@ -6,13 +6,13 @@ class ContactoController {
     {
 
         //validacion
-        if(empty($informacion['mensaje'])) {
-            return $this->responderComoJSON(
-                [
-                "mensaje_error" => "Hace falta que indique el mensaje"              
-                ]
-                ,400); 
-        }
+        if(empty($informacion["observaciones"])) {
+             return $this->responderComoJSON(
+                 [
+                "mensaje_error" => "Hace falta su observacion"              
+                 ]
+                 ,400); 
+         }
     
 
         $contactoModelo = new ContactoModelo(

@@ -12,6 +12,6 @@ export class contactenosService {
 
   public enviarDatos(data: any): Observable<any>
   {
-    return this.http.post('http://localhost:8000/routes/api_contacto.php',data);
+    return this.http.post('http://localhost/proyectophp/BACK/routes/api_contacto.php',data);
   }
 }
