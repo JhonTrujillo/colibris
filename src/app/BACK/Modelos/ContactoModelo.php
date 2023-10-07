@@ -2,13 +2,13 @@
 class ContactoModelo {
 
 
-    private $id;
-    private $nombres;
-    private $apellidos;
-    private $cedula;
-    private $email;
-    private $usuario;
-    private $observaciones;
+    public $id;
+    public $nombres;
+    public $apellidos;
+    public $cedula;
+    public $email;
+    public $usuario;
+    public $observaciones;
 
     public function __construct($nombres, $apellidos, $cedula, $email, $usuario, $observaciones )
     {
