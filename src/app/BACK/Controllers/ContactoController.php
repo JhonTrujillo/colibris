@@ -68,26 +68,27 @@ class ContactoController {
         // file_put_contents("../db/db.json",$contactosJSON);        
         // return $contactoModelo;
     }
-    public function listar(){
-       $conexion = new PDO('mysql:host=127.0.0.1;dbname=colibris','root','');
-       $query = "SELECT * FROM contactenos";
+//     public function listar(){
+//     $conexion = new PDO('mysql:host=127.0.0.1;dbname=colibris','root','');
+//     $queryList = "SELECT * FROM contactenos";
 
-        $smt = $conexion->prepare($query);
-        $smt->execute();
+//     $smt = $conexion->prepare($query);
 
-        $contactenos = $smt->fetchAll();
-        $contactenos = [];
-         foreach($contactenos as $contactenos){         
-            $contactenos = new contactenos();
-            $contactenos->GetId($contactenos['id']);
-            $contactenos->Setnombres($contactenos['nombres']);
-            $contactenos->Setapellidos($contactenos['apellidos']);
-            $contactenos->Setemail($contactenos['email']);
-            $contactenos->Setusuario($contactenos['usuario']);
-            $contactenos->Setobservaciones($contactenos['observaciones']);
-            // $contactenos[] = $contactenos;
-    }
+//     $smt->execute();
 
-    include __DIR__ . "/../Views/listar.php";
-    }
+//         $contactenos = $smt->fetchAll();
+//         $contactenos = [];
+//         foreach($contactenos as $contactenos){         
+//              $contactenos = new contactenos();
+//              $contactenos->SetId($contactenos['id']);
+//              $contactenos->Setnombres($contactenos['nombres']);
+//              $contactenos->Setapellidos($contactenos['apellidos']);
+//              $contactenos->Setemail($contactenos['email']);
+//              $contactenos->Setusuario($contactenos['usuario']);
+//              $contactenos->Setobservaciones($contactenos['observaciones']);
+//              $contactenos[] = $contactenos;
+//     }
+//    }
+
+    // include __DIR__ . "/../Views/listar.php";
 }
