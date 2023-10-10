@@ -68,27 +68,30 @@ class ContactoController {
         // file_put_contents("../db/db.json",$contactosJSON);        
         // return $contactoModelo;
     }
-//     public function listar(){
-//     $conexion = new PDO('mysql:host=127.0.0.1;dbname=colibris','root','');
-//     $queryList = "SELECT * FROM contactenos";
+     public function listar(){
+    $conexion = new PDO('mysql:host=127.0.0.1;dbname=colibris','root','');
+    $query = "SELECT * FROM contactenos";
 
-//     $smt = $conexion->prepare($query);
+     $smt = $conexion->prepare($query);
 
-//     $smt->execute();
+     $smt->execute();
 
-//         $contactenos = $smt->fetchAll();
-//         $contactenos = [];
-//         foreach($contactenos as $contactenos){         
-//              $contactenos = new contactenos();
-//              $contactenos->SetId($contactenos['id']);
-//              $contactenos->Setnombres($contactenos['nombres']);
-//              $contactenos->Setapellidos($contactenos['apellidos']);
-//              $contactenos->Setemail($contactenos['email']);
-//              $contactenos->Setusuario($contactenos['usuario']);
-//              $contactenos->Setobservaciones($contactenos['observaciones']);
-//              $contactenos[] = $contactenos;
-//     }
-//    }
+        $contactenos = $smt->fetchAll();
+        $respuestas = [];
+        foreach($contactenos as $contacto){         
+             $contactenos = new ContactoModelo(
+            $contacto['nombres'],
+            $contacto['apellidos'],
+            $contacto['cedula'],
+            $contacto['email'],
+            $contacto['usuario'],
+            $contacto['observaciones'],
+             );
+              
+              $respuestas[] = $contactenos;
+     }
+     $this->responderComoJSON($respuestas);
+    }
 
-    // include __DIR__ . "/../Views/listar.php";
+    
 }
